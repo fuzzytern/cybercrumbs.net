@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+%article.post
+  %header
+    %h2 {{ page.title }}
+    {% assign post = page %}
+    {% include post-info.html %}
+
+  {{ content }}
+
+-# DISQUS 
+#disqus_thread
+%noscript
+  Please enable JavaScript to view the 
+  %a{'href' => 'http://disqus.com/?ref_noscript'} comments powered by Disqus.
