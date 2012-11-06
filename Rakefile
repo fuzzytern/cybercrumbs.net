@@ -26,7 +26,6 @@ task :generate do
   })).process
 end
 
-
 desc "Create a new post"
 task :new do
   title = post_title?('Title: ')

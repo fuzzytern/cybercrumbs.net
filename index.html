@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+{% for post in site.posts limit:3 %}
+  <article class="post">
+    <header>
+      <h2> {{ post.title }} </h2>
+      <p> {{ site.time | date_to_long_string }} </p>
+    </header>
+    <div>
+      {{ post.content }}
+    </div>
+  </article>
+{% endfor %}
