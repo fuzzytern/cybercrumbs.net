@@ -1,17 +1,10 @@
 # _plugins/haml_converter.rb
 
 module Jekyll
+  require 'haml'
   class HamlConverter < Converter
     safe true
-
-    def setup
-      return if @setup
-      require 'haml'
-      @setup = true
-    rescue
-      STDERR.puts 'do `gem install haml`'
-      raise FatalException.new("Missing dependency: haml")
-    end
+    priority :low
 
     def matches(ext)
       ext =~ /haml/i
@@ -22,9 +15,29 @@ module Jekyll
     end
 
     def convert(content)
-      setup
       engine = Haml::Engine.new(content)
       engine.render
     end
   end
+
+  require 'sass'
+  class SassConverter < Converter
+    safe true
+    priority :low
+
+     def matches(ext)
+      ext =~ /sass/i
+    end
+
+    def output_ext(ext)
+      ".css"
+    end
+
+    def convert(content)
+      engine = Sass::Engine.new(content)
+      engine.render
+    end
+  end
 end
+
+
