@@ -1,11 +1,9 @@
 ---
+plugins:     ./_plugins
 title: CyberCrumbs
-
-assets:
-  compress:
-    css: sass
 
 exclude:
   - Gemfile
   - Gemfile.lock
   - Rakefile
+  - readme.md
