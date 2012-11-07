@@ -2,6 +2,13 @@
 plugins:     ./_plugins
 title: CyberCrumbs
 
+markdown: kramdown
+kramdown:
+  use_coderay: true
+coderay:
+  coderay_css: code
+  coderay_line_numbers:
+
 exclude:
   - Gemfile
   - Gemfile.lock
