@@ -1,35 +1,57 @@
 ---
 ---
-//font choices : Lobster for the titles, Dosis for code
 // All fonts are under the SIL Open Font License
-@import url(http://fonts.googleapis.com/css?family=Lobster)
-@import url(http://fonts.googleapis.com/css?family=Dosis)
-@import url(http://fonts.googleapis.com/css?family=Quattrocento)
+// Alternative font to consider for this theme: titles => {Indie Flower, Coming Soon, Cantora}, logo => Londrina Sketch
+@import url(http://fonts.googleapis.com/css?family=Gloria+Hallelujah|Dosis|Cabin+Sketch:700)
 
-h1
-  font-size: 3.5em
-  font-family: 'Lobster'
-  text-shadow: 1px 1px 2px #444
-  > :first-child
-    color: orange
-  > :nth-child(2)
-    color: #353535
+/**** VARIABLES DEFINITIONS ****/
+//- Colors
+$primary-color: #222
+$secondary-color: peru
 
-h2
-  font-family: 'Lobster'
+//- Font families (ff)
+$logo-ff: 'Cabin Sketch', 'Georgia', 'Arial'
+$title-ff: 'Gloria Hallelujah', 'Verdana'
+$body-ff: 'Verdana'
+$code-ff: 'Dosis', 'Arial'
 
+/**** DEFAULT LAYOUT STYLE ****/
 body
+  font-size: 11pt
   width: 650px
   margin: auto
+  font-family: $body-ff
+  color: $primary-color
+
+h1
+  font-family: $logo-ff
+
+h2
+  font-size: 1.3em
+  font-family: $title-ff
+
+h1
+  font-size: 4em
+  > :first-child
+    color: $secondary-color
+  > :nth-child(3)
+    font-size: .5em
+
+a
+  color: $secondary-color
+  &:hover
+    color: chocolate
 
 article
   text-align: justify
-  font-size: 14pt
-  font-family: 'Quattrocento', 'tahoma'
-  color: #333
+  margin-bottom: 40px
+
+footer
+  text-align: right
+  font-size: 0.9em
 
 
 // class for kramdown
 .code
-  font-family: 'Dosis', 'arial'
-  background-color: rgba(0,0,0, 0.4)
+  font-size: .9em
+  font-family: $code-ff

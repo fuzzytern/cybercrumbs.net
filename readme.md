@@ -1,4 +1,5 @@
 **ToDo list**
+* add Atom feed
 * setup haml convertion everywhere on the site (no jekyll support for this atm)
 * allow users to filter out posts not in their language (french/english)
 * create a page for CyberCrumbs Services 
