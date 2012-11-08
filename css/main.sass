@@ -1,4 +1,35 @@
 ---
 ---
+//font choices : Lobster for the titles, Dosis for code
+// All fonts are under the SIL Open Font License
+@import url(http://fonts.googleapis.com/css?family=Lobster)
+@import url(http://fonts.googleapis.com/css?family=Dosis)
+@import url(http://fonts.googleapis.com/css?family=Quattrocento)
+
 h1
-  color: green
+  font-size: 3.5em
+  font-family: 'Lobster'
+  text-shadow: 1px 1px 2px #444
+  > :first-child
+    color: orange
+  > :nth-child(2)
+    color: #353535
+
+h2
+  font-family: 'Lobster'
+
+body
+  width: 650px
+  margin: auto
+
+article
+  text-align: justify
+  font-size: 14pt
+  font-family: 'Quattrocento', 'tahoma'
+  color: #333
+
+
+// class for kramdown
+.code
+  font-family: 'Dosis', 'arial'
+  background-color: rgba(0,0,0, 0.4)
