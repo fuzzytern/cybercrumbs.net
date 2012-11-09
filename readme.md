@@ -1,3 +1,7 @@
+## Description ##
+
+This is the personal blog of Nicolas Wormser. It is generated usign [Jekyll](http://github.com/mojombo/jekyll)
+
 ## ToDo list ##
 
 * add Atom feed
