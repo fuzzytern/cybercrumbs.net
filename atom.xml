@@ -1,0 +1,9 @@
+{ % for post in site.posts limit:25 % }
+<entry>
+  <title>{ { post.title } }</title>
+  <link href="http://cycbercrumbs.net{ { post.url } }"/>
+  <updated>{ { post.date | date_to_xmlschema } }</updated>
+  <id>http://cycbercrumbs.net{ { post.id }}</id>
+  <content type="html">{ { post.content | xml_escape } }</content>
+</entry>
+{ % endfor % }
