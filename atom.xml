@@ -1,11 +1,23 @@
 ---
 ---
-{ % for post in site.posts limit:25 % }
-<entry>
-  <title>{ { post.title } }</title>
-  <link href="http://cycbercrumbs.net{ { post.url } }"/>
-  <updated>{ { post.date | date_to_xmlschema } }</updated>
-  <id>http://cycbercrumbs.net{ { post.id }}</id>
-  <content type="html">{ { post.content | xml_escape } }</content>
-</entry>
-{ % endfor % }
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>CyberCrumbs Scratchpad</title>
+  <id>http://ixti.net/</id>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+
+  <author>
+    <name>Nicolas Wormser</name>
+    <email>nicolas.wormser@utt.fr</email>
+  </author>
+
+  { % for post in site.posts limit:25 % }
+  <entry>
+    <title>{ { post.title } }</title>
+    <link href="http://cycbercrumbs.net{ { post.url } }"/>
+    <updated>{ { post.date | date_to_xmlschema } }</updated>
+    <id>http://cycbercrumbs.net{ { post.id }}</id>
+    <content type="html">{ { post.content | xml_escape } }</content>
+  </entry>
+  { % endfor % }
+</feed>
