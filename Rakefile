@@ -50,3 +50,8 @@ task :new do
   puts "A new post was created for at:"
   puts " \e[32m#{filename}\e[0m"
 end
+
+desc 'Generate and deploy'
+task :deploy => :generate do
+  sh 'rsync -rtzhv --progress --delete _site/ cc@cybercrumbs.net:/srv/cybercrumbs.net/'
+end
