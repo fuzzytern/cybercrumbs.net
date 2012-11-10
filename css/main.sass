@@ -2,18 +2,18 @@
 ---
 // All fonts are under the SIL Open Font License
 // Alternative font to consider for this theme: titles => {Indie Flower, Coming Soon, Cantora}, logo => Londrina Sketch
-@import url(http://fonts.googleapis.com/css?family=Gloria+Hallelujah|Dosis|Cabin+Sketch:700)
+@import url(http://fonts.googleapis.com/css?family=Gloria+Hallelujah|Cabin+Sketch:700)
 
 /**** VARIABLES DEFINITIONS ****/
 //- Colors
-$primary-color: #222
-$secondary-color: peru
+$main-color: #222
+$complementary-color: peru
+$main-color-dim: $main-color + #151515
 
 //- Font families (ff)
 $logo-ff: 'Cabin Sketch', 'Georgia', 'Arial'
 $title-ff: 'Gloria Hallelujah', 'Verdana'
 $body-ff: 'Verdana'
-$code-ff: 'Dosis', 'Arial'
 
 /**** DEFAULT LAYOUT STYLE ****/
 body
@@ -21,37 +21,49 @@ body
   width: 650px
   margin: auto
   font-family: $body-ff
-  color: $primary-color
+  color: $main-color
 
 h1
   font-family: $logo-ff
-
-h2
-  font-size: 1.3em
-  font-family: $title-ff
-
-h1
   font-size: 4em
   > :first-child
-    color: $secondary-color
+    color: $complementary-color
   > :nth-child(3)
     font-size: .5em
 
+header 
+  > h2, h3
+    margin: 0
+    font-family: $title-ff
+  > h3
+    font-size: 1.2em
+    text-align: center
+    color: $complementary-color
+  > h2
+    font-size: 1.5em
+
 a
-  color: $secondary-color
+  color: $complementary-color
   &:hover
     color: chocolate
 
+footer
+  text-align: right
+  font-size: 0.8em
+
+/**** POSTS SPECIFIC ****/
 article
   text-align: justify
   margin-bottom: 40px
 
-footer
-  text-align: right
-  font-size: 0.9em
+  .post-date
+    .ordinal
+      vertical-align: super
+      font-size: .9em
 
+  .highlight
+    background-color: $main-color-dim
+    code
+      line-height: 30px
+      margin: 0 20px
 
-// class for kramdown
-.code
-  font-size: .9em
-  font-family: $code-ff
