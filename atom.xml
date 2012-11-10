@@ -4,6 +4,8 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>CyberCrumbs Scratchpad</title>
   <id>http://cybercrumbs.net/</id>
+  <link href="http://cybercrumbs.net/atom.xml" rel="self">
+  <link href="http://cybercrumbs.net">
   <updated>{{ site.time | date_to_xmlschema }}</updated>
 
   <author>
