@@ -1,10 +1,12 @@
 ## Description ##
 
-This is the personal blog of Nicolas Wormser. It is generated usign [Jekyll](http://github.com/mojombo/jekyll)
+This is the personal blog of Nicolas Wormser. It is generated using [Jekyll](http://github.com/mojombo/jekyll)
 
 ## ToDo list ##
 
-* add Atom feed
+* permalinks on posts
+* add custom error pages
+* fix Atom feed not working
 * setup haml convertion everywhere on the site (no jekyll support for this atm)
 * allow users to filter out posts not in their language (french/english)
 * create a page for CyberCrumbs Services 
