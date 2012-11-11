@@ -19,4 +19,4 @@ The following directories and their contents are Copyright © Nicolas Wormser an
 All other directories and files are MIT licensed unless otherwise specified. Feel free to use the HTML and CSS as you please.
 
 ## Special Credits ##
-Thanks to Tom Preston-Werner (mojombo) and all Jekyll contributors
+Thanks to Tom Preston-Werner (@mojombo) and all Jekyll contributors
