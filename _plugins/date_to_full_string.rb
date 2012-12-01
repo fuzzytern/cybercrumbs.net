@@ -14,7 +14,7 @@ module Jekyll
       end
     end
     def date_to_full_string(date)
-      date.strftime("%B #{ordinalize(date.wday)}, %Y")
+      date.strftime("%B #{ordinalize(date.day)}, %Y")
     end
   end
 end
