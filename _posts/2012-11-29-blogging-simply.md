@@ -6,7 +6,7 @@ title: Blogging simply with Jekyll
 
 It's not the first time I'm starting a blog. I went from Blogger to Wordpress down to coding my own application. 
 
-The first two got me spending more time trying to accommodate to their unappealing and overwhelmed interfaces than actually writing content. The DIY approach seemed to better suit my needs until I got bored with the technologies I had chosen at that time (PHP and Symfony 2) and realised there were no easy way to migrate all the work I had been doing to a different system.
+The first two got me spending more time trying to accommodate to their unappealing and overly complex interfaces than actually writing content. The DIY approach seemed to better suit my needs until I got bored with the technologies I had chosen at that time (PHP and Symfony 2) and realised there were no easy way to migrate all the work I had been doing to a different system.
 
 When I got interested in ruby I started considering CMS like [Radiant](http://radiantcms.org) and [Refinery](http://refinerycms.com/), that seemed to be less time-consuming for blogging than writing my own [Ruby on Rails](http://rubyonrails.org) application. But it still seemed a bit of an overkill to me. I was finding the concept of having to log into a website to write my posts inappropriate and not on par with what tools like Git enable to do. 
 
