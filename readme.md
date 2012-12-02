@@ -7,8 +7,10 @@ This is the personal blog of Nicolas Wormser. It is generated using [Jekyll](htt
 * permalinks on posts
 * add custom error pages
 * fix Atom feed not working
+* error pages
 * setup haml convertion everywhere on the site (no jekyll support for this atm)
 * allow users to filter out posts not in their language (french/english)
+* add contact info in footer
 * create a page for CyberCrumbs Services 
 
 ## License ##
