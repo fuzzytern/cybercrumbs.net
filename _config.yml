@@ -2,6 +2,7 @@
 plugins:     ./_plugins
 title: CyberCrumbs
 permalink: /:year/:title.html
+url: http://cybercrumbs.net
 
 markdown: rdiscount
 pygments: true

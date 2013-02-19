@@ -15,6 +15,12 @@ $logo-ff: 'Cabin Sketch', 'Georgia', 'Arial'
 $title-ff: 'Gloria Hallelujah', 'Verdana'
 $body-ff: 'Verdana'
 
+/**** RESETTING WHAT NEEDS TO BE ****/
+a
+  color: inherit
+  text-decoration: inherit
+
+
 /**** DEFAULT LAYOUT STYLE ****/
 body
   font-size: 11pt
@@ -26,10 +32,11 @@ body
 h1
   font-family: $logo-ff
   font-size: 4em
-  > :first-child
-    color: $complementary-color
-  > :nth-child(3)
-    font-size: .5em
+  a
+    > :first-child
+      color: chocolate
+    > :nth-child(3)
+      font-size: .5em
 
 header 
   > h2, h3
@@ -38,14 +45,10 @@ header
   > h3
     font-size: 1.2em
     text-align: center
-    color: $complementary-color
+    color: chocolate
   > h2
     font-size: 1.5em
 
-a
-  color: $complementary-color
-  &:hover
-    color: chocolate
 
 footer
   text-align: right
@@ -55,6 +58,11 @@ footer
 article
   text-align: justify
   margin-bottom: 40px
+
+  a
+    color: chocolate
+    &:hover
+      color: $complementary-color
 
   > header > h2 a
     color: inherit
