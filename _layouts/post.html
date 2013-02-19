@@ -2,7 +2,11 @@
 layout: default
 ---
 
-<header>
-  <h2>{{ page.title }}</h2>
-</header>
-{{ content }}
+<article class="post">
+  <header>
+    <h3 class="post-date"> &gt; {{ page.date| date_to_full_string }} &lt; </span></h3>
+    <h2 > ¤ {{ page.title }} </h2>
+  </header>
+
+  {{ content }}
+</article>

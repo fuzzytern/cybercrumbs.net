@@ -1,6 +1,7 @@
 ---
 plugins:     ./_plugins
 title: CyberCrumbs
+permalink: /:year/:title.html
 
 markdown: rdiscount
 pygments: true
