@@ -1,5 +1,6 @@
 ---
 title: CyberCrumbs
+disqus: false
 ---
 <!DOCTYPE html>
 <html>
@@ -31,5 +32,17 @@ title: CyberCrumbs
         <a href='https://github.com/mojombo/jekyll'>Jekyll</a>
       </p>
     </footer>
+
+    <!-- DISQUS -->
+    <script type="text/javascript">
+      var disqus_shortname = 'cybercrumbs';
+
+      (function () {
+      var s = document.createElement('script'); s.async = true;
+      s.type = 'text/javascript';
+      s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+      (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+      }());
+    </script> 
   </body>
 </html>
