@@ -1,7 +1,7 @@
 ---
 layout: post
 tags: []
-title: Using Fnordmetric to track page views over time
+title: Understanding Fnordmetrics' backend
 ---
 
 [Fnordmetric](https://github.com/paulasmuth/fnordmetric) is an event-tracking app designed to help you keep track of application metrics by constructing and visualizing timeseries. It took me some time to understand how this all worked - what is a gauge, how do the backend and the frontend of Fnordmetric communicate with Redis etc... This article is not aimed at summing up all of these aspects, but simply at helping to understand some basics on how the Fnordmetric backend works.
