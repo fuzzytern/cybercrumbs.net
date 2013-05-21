@@ -4,7 +4,7 @@ tags: []
 title: Using Fnordmetric to track page views over time
 ---
 
-[Fnordmetric](https://github.com/paulasmuth/fnordmetric) is an event-tracking app designed to help you keep track of application metrics by constructing and visualizing timeseries. It took me some time to understand how this all worked - what is a gauge, a timeserie, how do the backend and the frontend of Fnordmetric communicate with Redis. This article is not aimed at summing up all of these aspects, but simply at helping to understand some basics on how the Fnordmetric backend works.
+[Fnordmetric](https://github.com/paulasmuth/fnordmetric) is an event-tracking app designed to help you keep track of application metrics by constructing and visualizing timeseries. It took me some time to understand how this all worked - what is a gauge, how do the backend and the frontend of Fnordmetric communicate with Redis etc... This article is not aimed at summing up all of these aspects, but simply at helping to understand some basics on how the Fnordmetric backend works.
 
 Timeseries are a sequence of data points measured at regular time intervals. It is particularly useful to show the progress of data over time. The advantage of using timeseries to represent event-based metrics is simple: by storing and updating key/values pairs into data buckets - called *gauges* - every time an event occurs, data-points emerge over time, and can be visualised simply by sending basic read operations to the datastore. This means that data computation is separated over time, rather than being done at access time.
 
